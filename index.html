@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mobile Friendly Final</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Benne&family=Ubuntu&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <a class="navbar-brand mx-auto" href="./index.html">
+            <img src="./media/logo.png" alt="Final Fantasy 9" class="logo">
+        </a>
+    </nav>
+
+    <!-- Carousel -->
+    <div class="d-flex justify-content-center" id="carousel-container">
+        <div id="carouselIndicators" class="carousel" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselIndicators" data-slide-to="4"></li>
+                <li data-target="#carouselIndicators" data-slide-to="5"></li>
+                <li data-target="#carouselIndicators" data-slide-to="6"></li>
+                <li data-target="#carouselIndicators" data-slide-to="7"></li>
+            </ol>
+            <div class="carousel-inner">
+                <!-- slide 1 -->
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="./media/zidane-tribal-virtue.jpg" alt="Virtue">
+                </div>
+                <!-- slide 2 -->
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./media/vivi-ornitier-sorrow.jpg" alt="Sorrow">
+                </div>
+                <!-- slide 3 -->
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./media/garnet-til-alexandros-devotion.jpg" alt="Devotion">
+                </div>
+                <!-- slide 4 -->
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./media/adelbert-steiner-dilemma.jpg" alt="Dilemma">
+                </div>
+                <!-- slide 5 -->
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./media/quina-quen-indulgence.jpg" alt="Indulgence">
+                </div>
+                <!-- slide 6 -->
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./media/freya-crescent-despair.jpg" alt="Despair">
+                </div>
+                <!-- slide 7 -->
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./media/eiko-carol-solitude.jpg" alt="Solitude">
+                </div>
+                <!-- slide 8 -->
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./media/amarant-corral-arrogance.jpg" alt="Arrogance">
+                </div>
+            </div>
+            <!-- controls -->
+            <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <hr class="my-5">
+
+    <!-- Tabs -->
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active font-ubuntu" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="true">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link font-ubuntu" id="story-tab" data-toggle="tab" href="#story" role="tab" aria-controls="story" aria-selected="false">Story</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link font-ubuntu" id="player-characters-tab" data-toggle="tab" href="#player-characters" role="tab" aria-controls="player-characters" aria-selected="false">Player Characters</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link font-ubuntu" id="npc-tab" data-toggle="tab" href="#npc" role="tab" aria-controls="npc" aria-selected="false">Non-Player Characters</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link font-ubuntu" id="villains-tab" data-toggle="tab" href="#villains" role="tab" aria-controls="villains" aria-selected="false">Villains</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
+            <p class="tab-content font-benne">
+                Final Fantasy IX is a role-playing video game developed and published by Square for the PlayStation video game console.
+                 It is the ninth game in the main Final Fantasy series. 
+                <br>
+                Game development occurred in parallel with Final Fantasy VIII.
+                 Envisioned by developers as a retrospective for the series, it departed from the futuristic settings of Final Fantasy VI, Final Fantasy VII, and Final Fantasy VIII
+                 by returning to the medieval style of the earlier games.
+                 Consequently, it draws heavy influence from the original Final Fantasy and features allusions to the rest of the series.
+                 The game introduced new features to the series despite this approach, such as "Active Time Event" cutscenes, "Mognet", and skill systems.
+                 Final Fantasy IX was the last game in the main series whose music was composed solely by Nobuo Uematsu.
+                 <br>
+                Final Fantasy IX was released in the year 2000 to critical acclaim and is considered one of the greatest video games of all time.
+                 Often cited by critics and fans as one of the best Final Fantasy games, it also holds the highest Metacritic score of the series.
+                 Final Fantasy IX was commercially successful, selling more than 5.5 million copies on PlayStation by March 2016.
+                 It was re-released in 2010 as a PS1 Classic on the PlayStation Store—this version was compatible with PlayStation 3 and PlayStation Portable;
+                 PlayStation Vita support arrived in 2012.
+                 Square Enix released ports featuring minor gameplay and graphical enhancements for various other platforms in the late 2010s.
+            </p>
+        </div>
+        <div class="tab-pane fade" id="story" role="tabpanel" aria-labelledby="story-tab">
+            <p class="tab-content font-benne">
+                Queen Brahne Raza Alexandros XVI of the kingdom of Alexandria lusts for power, and seeks to increase her domain by conquering the surrounding lands.
+                 Regent Cid of Lindblum worries how this will impact Princess Garnet, and dispatches the Tantalus Theater Troupe to kidnap her.
+                <br>
+                The princess yearns to escape from her wicked mother and willingly boards the Theater Ship.
+                 During the operation Vivi, a lone black mage, and Adelbert Steiner, Captain of the Royal Knights of Pluto, become involved.
+                 During their escape the Theater Ship is shot down and crashes into the Evil Forest. Brahne is outraged Garnet escaped with a valuable crystal,
+                 a royal heirloom, and dispatches the Black Waltzes to retrieve her.
+                <br>
+                <br>
+                Along their journey each character will be faced with life changing events, difficult to face questions, and even more difficult to accept answers.
+                 The story touches on themes of death, betrayal, purpose, love, abandonment, and many more very real topics.
+                 Although even throughout the heavy themes of the story, the game finds an appropriate balance of serious moments, light-hearted commedy,
+                 and beating the snot out of monsters such that the game is extremely enjoyable to play despite the sad undertone of the characters stories.
+            </p>
+        </div>
+        <div class="tab-pane fade" id="player-characters" role="tabpanel" aria-labelledby="player-characters-tab">
+            <!-- Character info Accordion -->
+            <div id="accordion">
+                <!-- card 1 -->
+                <div class="card">
+                    <div class="card-header bg-dark" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <h5 class="mb-0">
+                            <a class="btn text-light">
+                                Zidane Tribal
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body bg-md">
+                            Anim pariatur cliche reprehenderit
+                        </div>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div class="card">
+                    <div class="card-header bg-dark" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <h5 class="mb-0">
+                            <a class="btn collapsed text-light">
+                                Vivi Ornitier
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body bg-md">
+                            Anim pariatur cliche reprehenderit
+                        </div>
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div class="card">
+                    <div class="card-header bg-dark" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <h5 class="mb-0">
+                            <a class="btn collapsed text-light">
+                                Princess Garnet til Alexandros XVII
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body bg-md">
+                            Anim pariatur cliche reprehenderit
+                        </div>
+                    </div>
+                </div>
+                <!-- card 4 -->
+                <div class="card">
+                    <div class="card-header bg-dark" id="headingFour" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <h5 class="mb-0">
+                            <a class="btn collapsed text-light">
+                                Adelbert Steiner
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                        <div class="card-body bg-md">
+                            Anim pariatur cliche reprehenderit
+                        </div>
+                    </div>
+                </div>
+                <!-- card 5 -->
+                <div class="card">
+                    <div class="card-header bg-dark" id="headingFive" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        <h5 class="mb-0">
+                            <a class="btn collapsed text-light">
+                                Quina Quen
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                        <div class="card-body bg-md">
+                            Anim pariatur cliche reprehenderit
+                        </div>
+                    </div>
+                </div>
+                <!-- card 6 -->
+                <div class="card">
+                    <div class="card-header bg-dark" id="headingSix" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        <h5 class="mb-0">
+                            <a class="btn collapsed text-light">
+                                Freya Crescent
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                        <div class="card-body bg-md">
+                            Anim pariatur cliche reprehenderit
+                        </div>
+                    </div>
+                </div>
+                <!-- card 7 -->
+                <div class="card">
+                    <div class="card-header bg-dark" id="headingSeven" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        <h5 class="mb-0">
+                            <a class="btn collapsed text-light">
+                                Eiko Carol
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                        <div class="card-body bg-md">
+                            Anim pariatur cliche reprehenderit
+                        </div>
+                    </div>
+                </div>
+                <!-- card 8 -->
+                <div class="card">
+                    <div class="card-header bg-dark" id="headingEight" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        <h5 class="mb-0">
+                            <a class="btn collapsed text-light">
+                                Amarant Corral
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+                        <div class="card-body bg-md">
+                            Anim pariatur cliche reprehenderit
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="npc" role="tabpanel" aria-labelledby="npc-tab">
+            <!-- Character info Accordion -->
+            <div id="accordion3">
+                <!-- card 1 -->
+                <div class="card">
+                    <div class="card-header bg-dark" id="headingThirteen" data-toggle="collapse" data-target="#collapseThirteen" aria-expanded="true" aria-controls="collapseThirteen">
+                        <h5 class="mb-0">
+                            <a class="btn text-light">
+                                Baku
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen" data-parent="#accordion3">
+                        <div class="card-body bg-md">
+                            Anim pariatur cliche reprehenderit
+                        </div>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div class="card">
+                    <div class="card-header bg-dark" id="headingFourteen" data-toggle="collapse" data-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+                        <h5 class="mb-0">
+                            <a class="btn collapsed text-light">
+                                Tantalus
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseFourteen" class="collapse" aria-labelledby="headingFourteen" data-parent="#accordion3">
+                        <div class="card-body bg-md">
+                            Baku, Zidane, Blank, Cinna, Marcus, Ruby, The Nero Brothers.
+                        </div>
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div class="card">
+                    <div class="card-header bg-dark" id="headingFifteen" data-toggle="collapse" data-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
+                        <h5 class="mb-0">
+                            <a class="btn collapsed text-light">
+                                General Beatrix
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseFifteen" class="collapse" aria-labelledby="headingFifteen" data-parent="#accordion3">
+                        <div class="card-body bg-md">
+                            Anim pariatur cliche reprehenderit
+                        </div>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div class="card">
+                    <div class="card-header bg-dark" id="headingSixteen" data-toggle="collapse" data-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
+                        <h5 class="mb-0">
+                            <a class="btn collapsed text-light">
+                                Regent Cid Fabool IX
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseSixteen" class="collapse" aria-labelledby="headingSixteen" data-parent="#accordion3">
+                        <div class="card-body bg-md">
+                            Anim pariatur cliche reprehenderit
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="villains" role="tabpanel" aria-labelledby="villains-tab">
+            <!-- Villain info Accordion -->
+            <div id="accordion2">
+                <!-- card 1 -->
+                <div class="card">
+                    <div class="card-header bg-dark" id="headingNine" data-toggle="collapse" data-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+                        <h5 class="mb-0">
+                            <a class="btn text-light">
+                                Queen Brahne Raza Alexandros XVI
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion2">
+                        <div class="card-body bg-md">
+                            Anim pariatur cliche reprehenderit
+                        </div>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div class="card">
+                    <div class="card-header bg-dark" id="headingTen" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                        <h5 class="mb-0">
+                            <a class="btn collapsed text-light">
+                                Zorn & Thorn
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordion2">
+                        <div class="card-body bg-md">
+                            Anim pariatur cliche reprehenderit
+                        </div>
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div class="card">
+                    <div class="card-header bg-dark" id="headingEleven" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                        <h5 class="mb-0">
+                            <a class="btn collapsed text-light">
+                                Kuja
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordion2">
+                        <div class="card-body bg-md">
+                            Anim pariatur cliche reprehenderit
+                        </div>
+                    </div>
+                </div>
+                <!-- card 4 -->
+                <div class="card">
+                    <div class="card-header bg-dark" id="headingTwelve" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                        <h5 class="mb-0">
+                            <a class="btn collapsed text-light">
+                                Garland
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordion2">
+                        <div class="card-body bg-md">
+                            Anim pariatur cliche reprehenderit
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        </div>
+    </div>
+    <hr class="my-5">
+
+    <!-- footer -->
+    <footer class="bg-dark text-center text-light w-100">
+        <!-- Container -->
+        <div class="container p-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/CreatureLabs03" target="_blank" role="button">
+                <i class="fab fa-facebook-f">
+
+                </i>
+            </a>
+      
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/CreatureLabs03" target="_blank" role="button">
+                <i class="fab fa-twitter">
+
+                </i>
+            </a>
+      
+            <!-- Google -->
+            <a class="btn btn-outline-light btn-floating m-1" href="mailto:andrew@creaturecodes.com" target="_blank" role="button">
+                <i class="fab fa-google">
+
+                </i>
+            </a>
+      
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/andrew-meyer-03/" target="_blank" role="button"><i class="fab fa-linkedin-in"></i></a>
+      
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Creature-03" target="_blank" role="button">
+                <i class="fab fa-github">
+
+                </i>
+            </a>
+        </section>
+      
+        <!-- Section: Text -->
+        <section class="mb-4">
+            <p>
+              I don't have any involvement in the game portrayed, it's just a fan site, but if you'd like to see the code you can check it out as well as  
+              other stuff I've made and get in contact with me through any of the social media links above or the site down below!
+            </p>
+        </section>
+        <!-- Section: Text -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Designed by: -->
+        <div class="text-center p-1" style="background-color: rgba(0, 0, 0, 0.2);">
+          2021 Designed by:
+          <a class="text-white" href="https://creaturecodes.com/" target="_blank">CreatureCodes.com</a>
+        </div>
+    </footer>
+
+      
+
+    <!-- JS Script: jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- JS Script: Bootstrap 4.5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>
